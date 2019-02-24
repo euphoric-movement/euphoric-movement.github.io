@@ -1,60 +1,597 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'npm' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
 2 info using npm@1.3.21
 3 info using node@v0.10.24
-4 verbose cache add [ 'npm', null ]
-5 verbose cache add name=undefined spec="npm" args=["npm",null]
-6 verbose parsed url { protocol: null,
-6 verbose parsed url   slashes: null,
-6 verbose parsed url   auth: null,
-6 verbose parsed url   host: null,
-6 verbose parsed url   port: null,
-6 verbose parsed url   hostname: null,
-6 verbose parsed url   hash: null,
-6 verbose parsed url   search: null,
-6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'npm',
-6 verbose parsed url   path: 'npm',
-6 verbose parsed url   href: 'npm' }
-7 silly lockFile 660051d1-npm npm
-8 verbose lock npm /Users/rbenech/.npm/660051d1-npm.lock
-9 silly lockFile 660051d1-npm npm
-10 silly lockFile 660051d1-npm npm
-11 verbose addNamed [ 'npm', '' ]
-12 verbose addNamed [ null, '*' ]
-13 silly lockFile 2f990b75-npm npm@
-14 verbose lock npm@ /Users/rbenech/.npm/2f990b75-npm.lock
-15 silly addNameRange { name: 'npm', range: '*', hasData: false }
-16 verbose url raw npm
-17 verbose url resolving [ 'https://registry.npmjs.org/', './npm' ]
-18 verbose url resolved https://registry.npmjs.org/npm
-19 info trying registry request attempt 1 at 12:31:57
-20 http GET https://registry.npmjs.org/npm
-21 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
-22 info trying registry request attempt 2 at 12:32:07
-23 http GET https://registry.npmjs.org/npm
-24 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
-25 info trying registry request attempt 3 at 12:33:07
-26 http GET https://registry.npmjs.org/npm
-27 silly lockFile 2f990b75-npm npm@
-28 silly lockFile 2f990b75-npm npm@
-29 error Error: CERT_UNTRUSTED
-29 error     at SecurePair.<anonymous> (tls.js:1370:32)
-29 error     at SecurePair.EventEmitter.emit (events.js:92:17)
-29 error     at SecurePair.maybeInitFinished (tls.js:982:10)
-29 error     at CleartextStream.read [as _read] (tls.js:469:13)
-29 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
-29 error     at EncryptedStream.write [as _write] (tls.js:366:25)
-29 error     at doWrite (_stream_writable.js:221:10)
-29 error     at writeOrBuffer (_stream_writable.js:211:5)
-29 error     at EncryptedStream.Writable.write (_stream_writable.js:180:11)
-29 error     at write (_stream_readable.js:583:24)
-30 error If you need help, you may report this *entire* log,
-30 error including the npm and node versions, at:
-30 error     <http://github.com/isaacs/npm/issues>
-31 error System Darwin 18.2.0
-32 error command "node" "/usr/local/bin/npm" "install" "-g" "npm"
-33 error cwd /Users/rbenech/Dropbox/EM/euphoric-movement.github.io
-34 error node -v v0.10.24
-35 error npm -v 1.3.21
-36 verbose exit [ 1, true ]
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/rbenech/Dropbox/EM/euphoric-movement.github.io',
+5 verbose install   [ '@fortawesome/fontawesome-free',
+5 verbose install     'bootstrap',
+5 verbose install     'jquery',
+5 verbose install     'jquery.easing',
+5 verbose install     'browser-sync',
+5 verbose install     'gulp',
+5 verbose install     'gulp-autoprefixer',
+5 verbose install     'gulp-clean-css',
+5 verbose install     'gulp-header',
+5 verbose install     'gulp-plumber',
+5 verbose install     'gulp-rename',
+5 verbose install     'gulp-sass',
+5 verbose install     'gulp-uglify' ] ]
+6 info preinstall startbootstrap-agency@5.0.5
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'jquery@3.3.1', null ]
+9 verbose cache add name=undefined spec="jquery@3.3.1" args=["jquery@3.3.1",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'jquery@3.3.1',
+10 verbose parsed url   path: 'jquery@3.3.1',
+10 verbose parsed url   href: 'jquery@3.3.1' }
+11 verbose cache add name="jquery" spec="3.3.1" args=["jquery","3.3.1"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '3.3.1',
+12 verbose parsed url   path: '3.3.1',
+12 verbose parsed url   href: '3.3.1' }
+13 verbose addNamed [ 'jquery', '3.3.1' ]
+14 verbose addNamed [ '3.3.1', '3.3.1' ]
+15 verbose cache add [ 'browser-sync@2.26.3', null ]
+16 verbose cache add name=undefined spec="browser-sync@2.26.3" args=["browser-sync@2.26.3",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'browser-sync@2.26.3',
+17 verbose parsed url   path: 'browser-sync@2.26.3',
+17 verbose parsed url   href: 'browser-sync@2.26.3' }
+18 verbose cache add name="browser-sync" spec="2.26.3" args=["browser-sync","2.26.3"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '2.26.3',
+19 verbose parsed url   path: '2.26.3',
+19 verbose parsed url   href: '2.26.3' }
+20 verbose addNamed [ 'browser-sync', '2.26.3' ]
+21 verbose addNamed [ '2.26.3', '2.26.3' ]
+22 verbose cache add [ 'gulp@4.0.0', null ]
+23 verbose cache add name=undefined spec="gulp@4.0.0" args=["gulp@4.0.0",null]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: 'gulp@4.0.0',
+24 verbose parsed url   path: 'gulp@4.0.0',
+24 verbose parsed url   href: 'gulp@4.0.0' }
+25 verbose cache add name="gulp" spec="4.0.0" args=["gulp","4.0.0"]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: '4.0.0',
+26 verbose parsed url   path: '4.0.0',
+26 verbose parsed url   href: '4.0.0' }
+27 verbose addNamed [ 'gulp', '4.0.0' ]
+28 verbose addNamed [ '4.0.0', '4.0.0' ]
+29 verbose cache add [ 'jquery.easing@^1.4.1', null ]
+30 verbose cache add name=undefined spec="jquery.easing@^1.4.1" args=["jquery.easing@^1.4.1",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'jquery.easing@^1.4.1',
+31 verbose parsed url   path: 'jquery.easing@^1.4.1',
+31 verbose parsed url   href: 'jquery.easing@^1.4.1' }
+32 verbose cache add name="jquery.easing" spec="^1.4.1" args=["jquery.easing","^1.4.1"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: '^1.4.1',
+33 verbose parsed url   path: '^1.4.1',
+33 verbose parsed url   href: '^1.4.1' }
+34 verbose addNamed [ 'jquery.easing', '^1.4.1' ]
+35 verbose addNamed [ null, '>=1.4.1-0 <2.0.0-0' ]
+36 verbose cache add [ 'gulp-autoprefixer@6.0.0', null ]
+37 verbose cache add name=undefined spec="gulp-autoprefixer@6.0.0" args=["gulp-autoprefixer@6.0.0",null]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: 'gulp-autoprefixer@6.0.0',
+38 verbose parsed url   path: 'gulp-autoprefixer@6.0.0',
+38 verbose parsed url   href: 'gulp-autoprefixer@6.0.0' }
+39 verbose cache add name="gulp-autoprefixer" spec="6.0.0" args=["gulp-autoprefixer","6.0.0"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: '6.0.0',
+40 verbose parsed url   path: '6.0.0',
+40 verbose parsed url   href: '6.0.0' }
+41 verbose addNamed [ 'gulp-autoprefixer', '6.0.0' ]
+42 verbose addNamed [ '6.0.0', '6.0.0' ]
+43 silly lockFile 3df9e473-jquery-3-3-1 jquery@3.3.1
+44 verbose lock jquery@3.3.1 /Users/rbenech/.npm/3df9e473-jquery-3-3-1.lock
+45 silly lockFile 301e8602-browser-sync-2-26-3 browser-sync@2.26.3
+46 verbose lock browser-sync@2.26.3 /Users/rbenech/.npm/301e8602-browser-sync-2-26-3.lock
+47 silly lockFile e6ca007b-gulp-4-0-0 gulp@4.0.0
+48 verbose lock gulp@4.0.0 /Users/rbenech/.npm/e6ca007b-gulp-4-0-0.lock
+49 silly lockFile 246e426f-jquery-easing-1-4-1 jquery.easing@^1.4.1
+50 verbose lock jquery.easing@^1.4.1 /Users/rbenech/.npm/246e426f-jquery-easing-1-4-1.lock
+51 verbose cache add [ 'gulp-clean-css@4.0.0', null ]
+52 verbose cache add name=undefined spec="gulp-clean-css@4.0.0" args=["gulp-clean-css@4.0.0",null]
+53 verbose parsed url { protocol: null,
+53 verbose parsed url   slashes: null,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: null,
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: null,
+53 verbose parsed url   hash: null,
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: 'gulp-clean-css@4.0.0',
+53 verbose parsed url   path: 'gulp-clean-css@4.0.0',
+53 verbose parsed url   href: 'gulp-clean-css@4.0.0' }
+54 verbose cache add name="gulp-clean-css" spec="4.0.0" args=["gulp-clean-css","4.0.0"]
+55 verbose parsed url { protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: '4.0.0',
+55 verbose parsed url   path: '4.0.0',
+55 verbose parsed url   href: '4.0.0' }
+56 verbose addNamed [ 'gulp-clean-css', '4.0.0' ]
+57 verbose addNamed [ '4.0.0', '4.0.0' ]
+58 silly lockFile 0f611e3b-gulp-clean-css-4-0-0 gulp-clean-css@4.0.0
+59 verbose lock gulp-clean-css@4.0.0 /Users/rbenech/.npm/0f611e3b-gulp-clean-css-4-0-0.lock
+60 verbose cache add [ 'gulp-header@2.0.7', null ]
+61 verbose cache add name=undefined spec="gulp-header@2.0.7" args=["gulp-header@2.0.7",null]
+62 verbose parsed url { protocol: null,
+62 verbose parsed url   slashes: null,
+62 verbose parsed url   auth: null,
+62 verbose parsed url   host: null,
+62 verbose parsed url   port: null,
+62 verbose parsed url   hostname: null,
+62 verbose parsed url   hash: null,
+62 verbose parsed url   search: null,
+62 verbose parsed url   query: null,
+62 verbose parsed url   pathname: 'gulp-header@2.0.7',
+62 verbose parsed url   path: 'gulp-header@2.0.7',
+62 verbose parsed url   href: 'gulp-header@2.0.7' }
+63 verbose cache add name="gulp-header" spec="2.0.7" args=["gulp-header","2.0.7"]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: '2.0.7',
+64 verbose parsed url   path: '2.0.7',
+64 verbose parsed url   href: '2.0.7' }
+65 verbose addNamed [ 'gulp-header', '2.0.7' ]
+66 verbose addNamed [ '2.0.7', '2.0.7' ]
+67 silly lockFile fe8fefb9-gulp-header-2-0-7 gulp-header@2.0.7
+68 verbose lock gulp-header@2.0.7 /Users/rbenech/.npm/fe8fefb9-gulp-header-2-0-7.lock
+69 verbose cache add [ 'gulp-plumber@^1.2.1', null ]
+70 verbose cache add name=undefined spec="gulp-plumber@^1.2.1" args=["gulp-plumber@^1.2.1",null]
+71 verbose parsed url { protocol: null,
+71 verbose parsed url   slashes: null,
+71 verbose parsed url   auth: null,
+71 verbose parsed url   host: null,
+71 verbose parsed url   port: null,
+71 verbose parsed url   hostname: null,
+71 verbose parsed url   hash: null,
+71 verbose parsed url   search: null,
+71 verbose parsed url   query: null,
+71 verbose parsed url   pathname: 'gulp-plumber@^1.2.1',
+71 verbose parsed url   path: 'gulp-plumber@^1.2.1',
+71 verbose parsed url   href: 'gulp-plumber@^1.2.1' }
+72 verbose cache add name="gulp-plumber" spec="^1.2.1" args=["gulp-plumber","^1.2.1"]
+73 verbose parsed url { protocol: null,
+73 verbose parsed url   slashes: null,
+73 verbose parsed url   auth: null,
+73 verbose parsed url   host: null,
+73 verbose parsed url   port: null,
+73 verbose parsed url   hostname: null,
+73 verbose parsed url   hash: null,
+73 verbose parsed url   search: null,
+73 verbose parsed url   query: null,
+73 verbose parsed url   pathname: '^1.2.1',
+73 verbose parsed url   path: '^1.2.1',
+73 verbose parsed url   href: '^1.2.1' }
+74 verbose addNamed [ 'gulp-plumber', '^1.2.1' ]
+75 verbose addNamed [ null, '>=1.2.1-0 <2.0.0-0' ]
+76 silly lockFile 9bbc94f4-gulp-plumber-1-2-1 gulp-plumber@^1.2.1
+77 verbose lock gulp-plumber@^1.2.1 /Users/rbenech/.npm/9bbc94f4-gulp-plumber-1-2-1.lock
+78 verbose cache add [ 'gulp-rename@1.4.0', null ]
+79 verbose cache add name=undefined spec="gulp-rename@1.4.0" args=["gulp-rename@1.4.0",null]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: 'gulp-rename@1.4.0',
+80 verbose parsed url   path: 'gulp-rename@1.4.0',
+80 verbose parsed url   href: 'gulp-rename@1.4.0' }
+81 verbose cache add name="gulp-rename" spec="1.4.0" args=["gulp-rename","1.4.0"]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: '1.4.0',
+82 verbose parsed url   path: '1.4.0',
+82 verbose parsed url   href: '1.4.0' }
+83 verbose addNamed [ 'gulp-rename', '1.4.0' ]
+84 verbose addNamed [ '1.4.0', '1.4.0' ]
+85 silly lockFile 085ba6c5-gulp-rename-1-4-0 gulp-rename@1.4.0
+86 verbose lock gulp-rename@1.4.0 /Users/rbenech/.npm/085ba6c5-gulp-rename-1-4-0.lock
+87 verbose cache add [ 'gulp-sass@4.0.2', null ]
+88 verbose cache add name=undefined spec="gulp-sass@4.0.2" args=["gulp-sass@4.0.2",null]
+89 verbose parsed url { protocol: null,
+89 verbose parsed url   slashes: null,
+89 verbose parsed url   auth: null,
+89 verbose parsed url   host: null,
+89 verbose parsed url   port: null,
+89 verbose parsed url   hostname: null,
+89 verbose parsed url   hash: null,
+89 verbose parsed url   search: null,
+89 verbose parsed url   query: null,
+89 verbose parsed url   pathname: 'gulp-sass@4.0.2',
+89 verbose parsed url   path: 'gulp-sass@4.0.2',
+89 verbose parsed url   href: 'gulp-sass@4.0.2' }
+90 verbose cache add name="gulp-sass" spec="4.0.2" args=["gulp-sass","4.0.2"]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: '4.0.2',
+91 verbose parsed url   path: '4.0.2',
+91 verbose parsed url   href: '4.0.2' }
+92 verbose addNamed [ 'gulp-sass', '4.0.2' ]
+93 verbose addNamed [ '4.0.2', '4.0.2' ]
+94 silly lockFile 3e8be095-gulp-sass-4-0-2 gulp-sass@4.0.2
+95 verbose lock gulp-sass@4.0.2 /Users/rbenech/.npm/3e8be095-gulp-sass-4-0-2.lock
+96 verbose cache add [ 'gulp-uglify@3.0.1', null ]
+97 verbose cache add name=undefined spec="gulp-uglify@3.0.1" args=["gulp-uglify@3.0.1",null]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: 'gulp-uglify@3.0.1',
+98 verbose parsed url   path: 'gulp-uglify@3.0.1',
+98 verbose parsed url   href: 'gulp-uglify@3.0.1' }
+99 verbose cache add name="gulp-uglify" spec="3.0.1" args=["gulp-uglify","3.0.1"]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: '3.0.1',
+100 verbose parsed url   path: '3.0.1',
+100 verbose parsed url   href: '3.0.1' }
+101 verbose addNamed [ 'gulp-uglify', '3.0.1' ]
+102 verbose addNamed [ '3.0.1', '3.0.1' ]
+103 silly lockFile 5db6fb3e-gulp-uglify-3-0-1 gulp-uglify@3.0.1
+104 verbose lock gulp-uglify@3.0.1 /Users/rbenech/.npm/5db6fb3e-gulp-uglify-3-0-1.lock
+105 silly lockFile 79280398-gulp-autoprefixer-6-0-0 gulp-autoprefixer@6.0.0
+106 verbose lock gulp-autoprefixer@6.0.0 /Users/rbenech/.npm/79280398-gulp-autoprefixer-6-0-0.lock
+107 verbose cache add [ '@fortawesome/fontawesome-free@5.7.0', null ]
+108 verbose cache add name=undefined spec="@fortawesome/fontawesome-free@5.7.0" args=["@fortawesome/fontawesome-free@5.7.0",null]
+109 verbose parsed url { protocol: null,
+109 verbose parsed url   slashes: null,
+109 verbose parsed url   auth: null,
+109 verbose parsed url   host: null,
+109 verbose parsed url   port: null,
+109 verbose parsed url   hostname: null,
+109 verbose parsed url   hash: null,
+109 verbose parsed url   search: null,
+109 verbose parsed url   query: null,
+109 verbose parsed url   pathname: '@fortawesome/fontawesome-free@5.7.0',
+109 verbose parsed url   path: '@fortawesome/fontawesome-free@5.7.0',
+109 verbose parsed url   href: '@fortawesome/fontawesome-free@5.7.0' }
+110 verbose cache add name="" spec="fortawesome/fontawesome-free@5.7.0" args=["","fortawesome/fontawesome-free@5.7.0"]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: 'fortawesome/fontawesome-free@5.7.0',
+111 verbose parsed url   path: 'fortawesome/fontawesome-free@5.7.0',
+111 verbose parsed url   href: 'fortawesome/fontawesome-free@5.7.0' }
+112 verbose cache add name="fortawesome/fontawesome-free" spec="5.7.0" args=["fortawesome/fontawesome-free","5.7.0"]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: '5.7.0',
+113 verbose parsed url   path: '5.7.0',
+113 verbose parsed url   href: '5.7.0' }
+114 verbose addNamed [ 'fortawesome/fontawesome-free', '5.7.0' ]
+115 verbose addNamed [ '5.7.0', '5.7.0' ]
+116 silly lockFile 8655051b-rtawesome-fontawesome-free-5-7-0 fortawesome/fontawesome-free@5.7.0
+117 verbose lock fortawesome/fontawesome-free@5.7.0 /Users/rbenech/.npm/8655051b-rtawesome-fontawesome-free-5-7-0.lock
+118 verbose cache add [ 'bootstrap@4.2.1', null ]
+119 verbose cache add name=undefined spec="bootstrap@4.2.1" args=["bootstrap@4.2.1",null]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: 'bootstrap@4.2.1',
+120 verbose parsed url   path: 'bootstrap@4.2.1',
+120 verbose parsed url   href: 'bootstrap@4.2.1' }
+121 verbose cache add name="bootstrap" spec="4.2.1" args=["bootstrap","4.2.1"]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: '4.2.1',
+122 verbose parsed url   path: '4.2.1',
+122 verbose parsed url   href: '4.2.1' }
+123 verbose addNamed [ 'bootstrap', '4.2.1' ]
+124 verbose addNamed [ '4.2.1', '4.2.1' ]
+125 silly lockFile c5624603-bootstrap-4-2-1 bootstrap@4.2.1
+126 verbose lock bootstrap@4.2.1 /Users/rbenech/.npm/c5624603-bootstrap-4-2-1.lock
+127 silly addNameRange { name: 'jquery.easing',
+127 silly addNameRange   range: '>=1.4.1-0 <2.0.0-0',
+127 silly addNameRange   hasData: false }
+128 silly addNameRange { name: 'gulp-plumber',
+128 silly addNameRange   range: '>=1.2.1-0 <2.0.0-0',
+128 silly addNameRange   hasData: false }
+129 verbose url raw browser-sync/2.26.3
+130 verbose url resolving [ 'https://registry.npmjs.org/', './browser-sync/2.26.3' ]
+131 verbose url resolved https://registry.npmjs.org/browser-sync/2.26.3
+132 info trying registry request attempt 1 at 13:28:25
+133 http GET https://registry.npmjs.org/browser-sync/2.26.3
+134 verbose url raw jquery/3.3.1
+135 verbose url resolving [ 'https://registry.npmjs.org/', './jquery/3.3.1' ]
+136 verbose url resolved https://registry.npmjs.org/jquery/3.3.1
+137 info trying registry request attempt 1 at 13:28:25
+138 http GET https://registry.npmjs.org/jquery/3.3.1
+139 verbose url raw jquery.easing
+140 verbose url resolving [ 'https://registry.npmjs.org/', './jquery.easing' ]
+141 verbose url resolved https://registry.npmjs.org/jquery.easing
+142 info trying registry request attempt 1 at 13:28:25
+143 http GET https://registry.npmjs.org/jquery.easing
+144 verbose url raw gulp/4.0.0
+145 verbose url resolving [ 'https://registry.npmjs.org/', './gulp/4.0.0' ]
+146 verbose url resolved https://registry.npmjs.org/gulp/4.0.0
+147 info trying registry request attempt 1 at 13:28:25
+148 http GET https://registry.npmjs.org/gulp/4.0.0
+149 verbose url raw gulp-clean-css/4.0.0
+150 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-clean-css/4.0.0' ]
+151 verbose url resolved https://registry.npmjs.org/gulp-clean-css/4.0.0
+152 info trying registry request attempt 1 at 13:28:25
+153 http GET https://registry.npmjs.org/gulp-clean-css/4.0.0
+154 verbose url raw gulp-plumber
+155 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-plumber' ]
+156 verbose url resolved https://registry.npmjs.org/gulp-plumber
+157 info trying registry request attempt 1 at 13:28:25
+158 http GET https://registry.npmjs.org/gulp-plumber
+159 verbose url raw gulp-rename/1.4.0
+160 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rename/1.4.0' ]
+161 verbose url resolved https://registry.npmjs.org/gulp-rename/1.4.0
+162 info trying registry request attempt 1 at 13:28:25
+163 http GET https://registry.npmjs.org/gulp-rename/1.4.0
+164 verbose url raw gulp-sass/4.0.2
+165 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-sass/4.0.2' ]
+166 verbose url resolved https://registry.npmjs.org/gulp-sass/4.0.2
+167 info trying registry request attempt 1 at 13:28:25
+168 http GET https://registry.npmjs.org/gulp-sass/4.0.2
+169 verbose url raw gulp-header/2.0.7
+170 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-header/2.0.7' ]
+171 verbose url resolved https://registry.npmjs.org/gulp-header/2.0.7
+172 info trying registry request attempt 1 at 13:28:25
+173 http GET https://registry.npmjs.org/gulp-header/2.0.7
+174 verbose url raw gulp-uglify/3.0.1
+175 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-uglify/3.0.1' ]
+176 verbose url resolved https://registry.npmjs.org/gulp-uglify/3.0.1
+177 info trying registry request attempt 1 at 13:28:25
+178 http GET https://registry.npmjs.org/gulp-uglify/3.0.1
+179 verbose url raw gulp-autoprefixer/6.0.0
+180 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-autoprefixer/6.0.0' ]
+181 verbose url resolved https://registry.npmjs.org/gulp-autoprefixer/6.0.0
+182 info trying registry request attempt 1 at 13:28:25
+183 http GET https://registry.npmjs.org/gulp-autoprefixer/6.0.0
+184 verbose url raw fortawesome/fontawesome-free/5.7.0
+185 verbose url resolving [ 'https://registry.npmjs.org/',
+185 verbose url resolving   './fortawesome/fontawesome-free/5.7.0' ]
+186 verbose url resolved https://registry.npmjs.org/fortawesome/fontawesome-free/5.7.0
+187 info trying registry request attempt 1 at 13:28:25
+188 http GET https://registry.npmjs.org/fortawesome/fontawesome-free/5.7.0
+189 verbose url raw bootstrap/4.2.1
+190 verbose url resolving [ 'https://registry.npmjs.org/', './bootstrap/4.2.1' ]
+191 verbose url resolved https://registry.npmjs.org/bootstrap/4.2.1
+192 info trying registry request attempt 1 at 13:28:25
+193 http GET https://registry.npmjs.org/bootstrap/4.2.1
+194 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+195 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+196 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+197 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+198 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+199 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+200 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+201 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+202 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+203 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+204 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+205 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+206 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+207 info trying registry request attempt 2 at 13:28:35
+208 http GET https://registry.npmjs.org/gulp-clean-css/4.0.0
+209 info trying registry request attempt 2 at 13:28:35
+210 http GET https://registry.npmjs.org/jquery.easing
+211 info trying registry request attempt 2 at 13:28:35
+212 http GET https://registry.npmjs.org/jquery/3.3.1
+213 info trying registry request attempt 2 at 13:28:35
+214 http GET https://registry.npmjs.org/browser-sync/2.26.3
+215 info trying registry request attempt 2 at 13:28:35
+216 http GET https://registry.npmjs.org/gulp/4.0.0
+217 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+218 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+219 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+220 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+221 info trying registry request attempt 2 at 13:28:35
+222 http GET https://registry.npmjs.org/gulp-plumber
+223 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+224 info trying registry request attempt 2 at 13:28:35
+225 http GET https://registry.npmjs.org/gulp-rename/1.4.0
+226 info trying registry request attempt 2 at 13:28:35
+227 http GET https://registry.npmjs.org/gulp-sass/4.0.2
+228 info trying registry request attempt 2 at 13:28:35
+229 http GET https://registry.npmjs.org/gulp-header/2.0.7
+230 info trying registry request attempt 2 at 13:28:35
+231 http GET https://registry.npmjs.org/gulp-uglify/3.0.1
+232 info trying registry request attempt 2 at 13:28:35
+233 http GET https://registry.npmjs.org/gulp-autoprefixer/6.0.0
+234 info trying registry request attempt 2 at 13:28:35
+235 http GET https://registry.npmjs.org/bootstrap/4.2.1
+236 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+237 info trying registry request attempt 2 at 13:28:35
+238 http GET https://registry.npmjs.org/fortawesome/fontawesome-free/5.7.0
+239 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+240 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+241 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+242 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+243 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+244 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+245 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+246 info trying registry request attempt 3 at 13:29:35
+247 http GET https://registry.npmjs.org/gulp-clean-css/4.0.0
+248 info trying registry request attempt 3 at 13:29:35
+249 http GET https://registry.npmjs.org/jquery.easing
+250 info trying registry request attempt 3 at 13:29:35
+251 http GET https://registry.npmjs.org/jquery/3.3.1
+252 info trying registry request attempt 3 at 13:29:35
+253 http GET https://registry.npmjs.org/browser-sync/2.26.3
+254 info trying registry request attempt 3 at 13:29:35
+255 http GET https://registry.npmjs.org/gulp/4.0.0
+256 silly lockFile 0f611e3b-gulp-clean-css-4-0-0 gulp-clean-css@4.0.0
+257 silly lockFile 0f611e3b-gulp-clean-css-4-0-0 gulp-clean-css@4.0.0
+258 silly lockFile 3df9e473-jquery-3-3-1 jquery@3.3.1
+259 silly lockFile 3df9e473-jquery-3-3-1 jquery@3.3.1
+260 error Error: CERT_UNTRUSTED
+260 error     at SecurePair.<anonymous> (tls.js:1370:32)
+260 error     at SecurePair.EventEmitter.emit (events.js:92:17)
+260 error     at SecurePair.maybeInitFinished (tls.js:982:10)
+260 error     at CleartextStream.read [as _read] (tls.js:469:13)
+260 error     at CleartextStream.Readable.read (_stream_readable.js:320:10)
+260 error     at EncryptedStream.write [as _write] (tls.js:366:25)
+260 error     at doWrite (_stream_writable.js:221:10)
+260 error     at writeOrBuffer (_stream_writable.js:211:5)
+260 error     at EncryptedStream.Writable.write (_stream_writable.js:180:11)
+260 error     at write (_stream_readable.js:583:24)
+260 error     at flow (_stream_readable.js:592:7)
+260 error     at Socket.pipeOnReadable (_stream_readable.js:624:5)
+261 error If you need help, you may report this *entire* log,
+261 error including the npm and node versions, at:
+261 error     <http://github.com/isaacs/npm/issues>
+262 error System Darwin 18.2.0
+263 error command "node" "/usr/local/bin/npm" "install"
+264 error cwd /Users/rbenech/Dropbox/EM/euphoric-movement.github.io
+265 error node -v v0.10.24
+266 error npm -v 1.3.21
+267 verbose exit [ 1, true ]
