@@ -42,7 +42,9 @@ header.masthead {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+        font-variant-caps: small-caps;
         margin-bottom: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
         @include heading-font;
       }
     }
