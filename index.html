@@ -88,10 +88,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-            <a href="https://www.facebook.com/events/837447826587410/" target="_new">
-              <img src="img/events/WormMoon-2019-March.jpg" alt="Dance with the Worm Moon" class="img-fluid"
-                style="max-width: 50%"><br><br>
-            </a>
+          <a href="https://www.facebook.com/events/837447826587410/" target="_new">
+            <img src="img/events/WormMoon-2019-March.jpg" alt="Dance with the Worm Moon" class="img-fluid"
+              style="max-width: 50%"><br><br>
+          </a>
           <h2 class="section-heading text-uppercase">Event Hosting</h2>
           <h3 class="section-subheading text-muted">Want us to DJ your next event?</h3>
         </div>
@@ -240,7 +240,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/history1.JPG" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -256,35 +256,35 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/logos/em-logo-final.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>March 2012</h4>
+                  <h4>March 2014</h4>
                   <h4 class="subheading">A Production Company is Born</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Paid gigs started flowing in, we had to make it official.</p>
+                  <p class="text-muted">There was something happening, we had to make it official.</p>
                 </div>
               </div>
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/share-thelove.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>January 2017</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
+                  <h4>March 2017</h4>
+                  <h4 class="subheading">Sharing the Love</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Now we make Dancers Dance all over the place.</p>
+                  <p class="text-muted">Dancing is spreading all over the place.</p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/about/hella.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -496,6 +496,9 @@
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="#">
+            <img class="img-fluid d-block mx-auto" src="img/logos/JohnnyV.jpg" alt="">
+          </a>
+          <a href="#">
             <img class="img-fluid d-block mx-auto" src="img/logos/SportsPage-Long-Logo-white-small-300x146.png" alt="">
           </a>
         </div>
@@ -504,7 +507,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <!-- <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -551,7 +554,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer>
@@ -571,6 +574,7 @@
               <a href="https://www.facebook.com/euphoricmovement">
                 <i class="fab fa-facebook-f"></i>
               </a>
+              <!-- Load Facebook SDK for JavaScript -->
             </li>
             <li class="list-inline-item">
               <a href="#">
@@ -583,6 +587,28 @@
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
               <a href="#">Privacy Policy</a>
+              <div id="fb-root"></div>
+              <script>
+                window.fbAsyncInit = function () {
+                  FB.init({
+                    xfbml: true,
+                    version: 'v3.2'
+                  });
+                };
+
+                (function (d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+              <!-- Your customer chat code -->
+              <div class="fb-customerchat" attribution=install_email page_id="386494398166173" theme_color="#6699cc"
+                logged_in_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!"
+                logged_out_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!">
+              </div>
             </li>
           </ul>
         </div>
@@ -606,29 +632,29 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">Electronic Dance Music</h2>
+                <p class="item-intro text-muted">The root of all dance music.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
                 <p>source: <a href="https://en.wikipedia.org/wiki/Deep_house">wikipedia</a></p>
-                <p>Electronic dance music (EDM), also known as dance music, club music, or simply dance,[1] is a broad
+                <p>Electronic dance music (EDM), also known as dance music, club music, or simply dance, is a broad
                   range of percussive electronic music genres made largely for nightclubs, raves and festivals. It is
                   generally produced for playback by disc jockeys who create seamless selections of tracks, called a mix
-                  by segueing from one recording to another.[2] EDM producers also perform their music live in a concert
+                  by segueing from one recording to another. EDM producers also perform their music live in a concert
                   or festival setting in what is sometimes called a live PA. In Europe, EDM is more commonly called
-                  'dance music', or simply 'dance'.[3]
+                  'dance music', or simply 'dance'.
                   In the late 1980s and early 1990s, following the emergence of raving, pirate radios and an upsurge of
                   interest in club culture, EDM achieved widespread mainstream popularity in Europe. In the United
                   States at that time, acceptance of dance culture was not universal; although both electro and Chicago
                   house music were influential both in Europe and the United States, mainstream media outlets and the
                   record industry remained openly hostile to it. There was also a perceived association between EDM and
                   drug culture, which led governments at state and city level to enact laws and policies intended to
-                  halt the spread of rave culture.[4]
+                  halt the spread of rave culture.
                   Subsequently, in the new millennium, the popularity of EDM increased globally, largely in Australia
                   and the United States. By the early 2010s, the term "electronic dance music" and the initialism "EDM"
                   was being pushed by the American music industry and music press in an effort to rebrand American rave
                   culture.[4] Despite the industry's attempt to create a specific EDM brand, the initialism remains in
                   use as an umbrella term for multiple genres, including house, techno, trance, drum and bass, tropical
-                  house, and dubstep, as well as their respective subgenres.[5][6][7][8][9]</p>
+                  house, and dubstep, as well as their respective subgenres.</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Threads</li>
@@ -636,7 +662,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Style</button>
+                  Close EDM</button>
               </div>
             </div>
           </div>
@@ -659,20 +685,18 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">Deep/Future House</h2>
+                <p class="item-intro text-muted">Acoutstic with mild vocals, house music to the core. .</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Future house is a house music genre that emerged in the 2010s United Kingdom, described as a fusion
+                  of deep house, UK garage and incorporating other elements and techniques of other EDM
+                  genres.</p>
                 <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
+                  <li>Source: https://en.wikipedia.org/wiki/Future_house</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Got it</button>
               </div>
             </div>
           </div>
@@ -695,13 +719,11 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">Remixes</h2>
+                <p class="item-intro text-muted">Really, you need to know more.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
+                <p>Yea, I never thought anyone would click on that.</p>
+                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Finish</li>
                   <li>Category: Identity</li>
@@ -731,13 +753,10 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">Breaks</h2>
+                <p class="item-intro text-muted">Dance with an edge.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
+                <p>Try it.<ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Lines</li>
                   <li>Category: Branding</li>
@@ -767,12 +786,10 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">Trap</h2>
+                <p class="item-intro text-muted">Caught ya.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Mouse = caught!</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Southwest</li>
@@ -780,7 +797,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Lock Pick your way Out</button>
               </div>
             </div>
           </div>
@@ -803,12 +820,10 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">By Request</h2>
+                <p class="item-intro text-muted">... and will play special requests.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                  blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia
-                  expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>mostly.</p>
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Window</li>
@@ -816,7 +831,7 @@
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Close Custom Shit</button>
               </div>
             </div>
           </div>
