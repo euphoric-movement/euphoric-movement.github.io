@@ -9,6 +9,10 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const pkg = require('./package.json');
+// const webp = require('gulp-webp');
+// const postcss = require('gulp-postcss');
+// const autoprefixer = require('autoprefixer-core');
+// const webpcss = require('webpcss');
 
 // Set the banner content
 const banner = ['/*!\n',
@@ -50,6 +54,25 @@ gulp.task('vendor', function(cb) {
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
   cb();
+
+//   //webp image conversion
+// gulp.task('webp', function () {
+//   return gulp.src('./img/*.{png,jpg,jpeg}')
+//       .pipe(webp())
+//       .pipe(gulp.dest('./img'));
+// });
+
+// //webp image prepending ()
+// gulp.task('css', function () {
+//   var processors = [
+//       autoprefixer,
+//       webpcss.default
+//   ];
+//   return gulp.src('./src/*.css')
+//       .pipe( postcss(processors) )
+//       .pipe( gulp.dest('./dist') );
+// });
+
 
 });
 
