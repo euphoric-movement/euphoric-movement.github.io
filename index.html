@@ -595,7 +595,7 @@
                 window.fbAsyncInit = function () {
                   FB.init({
                     xfbml: true,
-                    version: 'v3.2'
+                    version: 'v6.0'
                   });
                 };
 
@@ -608,7 +608,7 @@
                 }(document, 'script', 'facebook-jssdk'));</script>
 
               <!-- Your customer chat code -->
-              <div class="fb-customerchat" attribution=install_email page_id="386494398166173" theme_color="#6699cc"
+              <div class="fb-customerchat" attribution="setup_tool" page_id="386494398166173" theme_color="#6699cc"
                 logged_in_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!"
                 logged_out_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!">
               </div>
@@ -853,6 +853,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 </body>
 
