@@ -76,20 +76,40 @@
         <div class="intro-lead-in">Dance with Euphoric Movement!</div>
         <div class="intro-heading"><a href="https://www.instagram.com/explore/tags/2ndSaturday/">#2ndSaturday</a>
         </div>
-        <div class="intro-heading"><a href="https://www.instagram.com/explore/tags/moondance/">#MoonDanceCampbell</a>
+        <div class="intro-heading"><a href="https://www.instagram.com/explore/tags/moondance/">#MoonDance</a>
         </div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
   </header>
 
+  <section id="streaming" style="padding-top: 20px">
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "emvibesdjs",
+        theme: "dark",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["em-vibes.com", "www.em-vibes.com"]
+      });
+    </script>
+  </section>
+
   <!-- Services -->
   <section id="services" style="padding-top: 20px">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <a href="https://www.facebook.com/events/1502639449902694/" target="_new">
-            <img src="img/events/SnowMoon-2020-Feb.png" alt="Dance with the Hunter Moon" class="img-fluid"
+          <a href="https://www.facebook.com/events/923922384731307" target="_new">
+            <img src="img/events/PinkMoon-2020-April.png" alt="Dance-in-place with the Pink Moon" class="img-fluid"
               style="max-width: 70%"><br><br>
           </a>
           <h2 class="section-heading text-uppercase">Event Hosting</h2>
@@ -591,27 +611,27 @@
           </ul>
         </div>
         <div id="fb-root"></div>
-              <script>
-                window.fbAsyncInit = function () {
-                  FB.init({
-                    xfbml: true,
-                    version: 'v6.0'
-                  });
-                };
+        <script>
+          window.fbAsyncInit = function () {
+            FB.init({
+              xfbml: true,
+              version: 'v6.0'
+            });
+          };
 
-                (function (d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
+          (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
 
-              <!-- Your customer chat code -->
-              <div class="fb-customerchat" attribution="setup_tool" page_id="386494398166173" theme_color="#6699cc"
-                logged_in_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!"
-                logged_out_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!">
-              </div>
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat" attribution="setup_tool" page_id="386494398166173" theme_color="#6699cc"
+          logged_in_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!"
+          logged_out_greeting="Hi! Do you like to dance?  How bout join us every 2nd Saturday in Campbell!">
+        </div>
       </div>
     </div>
   </footer>
@@ -723,7 +743,7 @@
                 <p class="item-intro text-muted">Really, you need to know more.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
                 <p>Yea, I never thought anyone would click on that.</p>
-                 <ul class="list-inline">
+                <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Finish</li>
                   <li>Category: Identity</li>
@@ -757,13 +777,13 @@
                 <p class="item-intro text-muted">Dance with an edge.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
                 <p>Try it.<ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                    <li>Date: January 2017</li>
+                    <li>Client: Lines</li>
+                    <li>Category: Branding</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
               </div>
             </div>
           </div>
@@ -848,7 +868,7 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Contact form JavaScript -->
-<!--   <script src="js/jqBootstrapValidation.js"></script>
+  <!--   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script> -->
 
   <!-- Custom scripts for this template -->
