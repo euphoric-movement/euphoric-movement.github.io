@@ -77,6 +77,37 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Dance with Euphoric Movement!</div>
+        <!-- Twitch embeded -->
+
+        <section id="streaming" style="padding-top: 20px">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div id="twitch-embed"></div>
+                <a href="https://twitch.tv/emvibesdjs">Watch on Twitch.tv</a> (tip, stream this to your TV and listed on
+                your
+                home
+                stereo)
+              </div>
+            </div>
+          </div>
+
+          <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+          <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+              width: 854,
+              height: 480,
+              channel: "emvibesdjs",
+              theme: "dark",
+              // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+              parent: ["em-vibes.com", "www.em-vibes.com"]
+            });
+          </script>
+
+
+        </section>
+
         <div class="intro-heading"><a href="https://www.instagram.com/explore/tags/2ndSaturday/">#2ndSaturday</a>
         </div>
         <div class="intro-heading"><a href="https://www.instagram.com/explore/tags/moondance/">#MoonDance</a>
@@ -87,35 +118,6 @@
     </div>
   </header>
 
-  <!-- Twitch embeded -->
-
-  <section id="streaming" style="padding-top: 20px">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div id="twitch-embed"></div>
-          <a href="https://twitch.tv/emvibesdjs">Watch on Twitch.tv</a> (tip, stream this to your TV and listed on your
-          home
-          stereo)
-        </div>
-      </div>
-    </div>
-
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "emvibesdjs",
-        theme: "dark",
-        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-        parent: ["em-vibes.com", "www.em-vibes.com"]
-      });
-    </script>
-
-
-  </section>
 
   <!-- Services -->
   <section id="services" style="padding-top: 20px">
