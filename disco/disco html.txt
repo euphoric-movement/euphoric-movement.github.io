@@ -1,0 +1,8 @@
+<section id="disco" class="px2">
+<div class="verticalLine">
+</div>
+<div id="discoBallLight"></div>
+<div id="discoBall">
+<div id="discoBallMiddle"></div>
+</div>
+</section>
